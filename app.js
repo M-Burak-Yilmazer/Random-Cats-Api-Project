@@ -7,24 +7,22 @@ const tarih = document.getElementById("tarih");
 // image.innerHTML = `<img class="image" src="./img/loading.gif" />`;
 setTimeout(() => {
   loadingDiv.remove();
-  containerDiv.classList.add("blok")
+  containerDiv.classList.add("blok");
   request();
   btn.addEventListener("click", () => {
     cardDiv.innerHTML = "";
     request();
   });
- 
 }, 3000);
 
- setInterval(()=>{tarih.innerHTML = `${new Date().toLocaleString()}`;},1000)
-
+setInterval(() => {
+  tarih.innerHTML = `${new Date().toLocaleString()}`;
+}, 1000);
 
 const url = "./img/spin.gif";
 let image = document.createElement("img");
 image.src = `${url}`;
 image.classList.add("image");
-
-
 
 const showError = () => {
   image.src = "./img/error.gif";

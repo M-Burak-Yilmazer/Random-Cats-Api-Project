@@ -1,28 +1,27 @@
+body {
+  background: url(./img/Twinkle\ Star-0.7s-1536px.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#cardDiv .image {
+  display: none;
+}
+#cardDiv .image.block {
+  display: block;
+}
 
-body{
-    background: url(./img/Twinkle\ Star-0.7s-1536px.png);
-    width:100%;
-    height:100%;
-    background-size: cover;
-    background-position: center;;
+div.none {
+  display: none !important;
 }
-#cardDiv .image{
-display:none;
+div.none.blok {
+  display: flex !important;
 }
-#cardDiv .image.block{
-    display:block;
+.catimg {
+  overflow: hidden;
+  transition: scale 2s ease-in-out;
 }
-
-div.none{
-    display:none !important;
-}
-div.none.blok{
-    display:flex !important;
-}
-.catimg{
-    overflow:hidden;
-    transition: scale 2s ease-in-out;
-}
-.catimg:hover{
-    scale:1.1
+.catimg:hover {
+  scale: 1.1;
 }
